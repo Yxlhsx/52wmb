@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Dao.BillDao">
+
+    <insert id="addBill" parameterType="Pojo.Bill">
+        INSERT INTO ct_freightbl (ufreightblid,
+        ucustomerid,
+        ublno,
+        upurchaser,
+        usupplier,
+        utradedate,
+        upurchasingarea,
+        usupplyarea,
+        uproductdesc,
+        uweight,
+        unumber,
+        utotalamount,
+        uprice,
+        ubxunit,
+        ushipmentport,
+        upurchaseport,
+        ushippingtype,
+        ucreatedate
+        )VALUES
+        (#{ufreightblid},
+        #{ucustomerid},
+        #{ublno},
+        #{upurchaser},
+        #{usupplier},
+        #{utradedate},
+        #{upurchasingarea},
+        #{usupplyarea},
+        #{uproductdesc},
+        #{uweight},
+        #{unumber},
+        #{utotalamount},
+        #{uprice},
+        #{ubxunit},
+        #{ushipmentport},
+        #{upurchaseport},
+        #{ushippingtype},
+        #{ucreatedate})
+    </insert>
+</mapper>
