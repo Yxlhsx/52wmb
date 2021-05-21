@@ -14,8 +14,8 @@ public class LoginUtil {
     public static String login() throws IOException {
         if (cookie == null) {
             Map<String, String> paramdata = new HashMap<String, String>();
-            paramdata.put("signusername", "13632718370");
-            paramdata.put("signpassword", "Myx2013");
+            paramdata.put("signusername", "");
+            paramdata.put("signpassword", "");
             Connection.Response res = Jsoup.connect("https://www.52wmb.com/signin")
                     .userAgent("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31")
                     .data(paramdata)//
